@@ -1,4 +1,5 @@
-/*
+/**
+File name: main.cpp
 Statement of Purpose: Creates a LinkedBag of class Point called pointBag,
 inputs coordinate points from a file to fill the pointBag, asks user for
 a point to compare the distance to all the points in pointBag.
@@ -7,7 +8,6 @@ Output: The users point and the each distance from the users point
 to the points in the pointBag.
 */
 
-// File name: main.cpp
 
 #include<iostream>
 #include<fstream>
