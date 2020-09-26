@@ -1,5 +1,4 @@
 //File: point.h
-//Date: 9/9/2020
 
 #pragma once
 #include<iostream>

@@ -1,6 +1,4 @@
-//File name: pointImp.cpp
-//Statement of Purpose: Implementation file for point class
-//Date: 9/9/2020
+//File name: point.cpp
 
 #include"point.h"
 using namespace std;

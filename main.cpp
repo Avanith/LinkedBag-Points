@@ -1,12 +1,13 @@
 /*
-LinkedBag Point Group Project
-Date: 9/23/2020
-Group Members:
-Gustavo Rosales: Coder, Convened group
-Mohamed Omar Elkoptan: Coder
-Chen I Reece: Coder
-Daniel Targonski: Coder & Submitter
+Statement of Purpose: Creates a LinkedBag of class Point called pointBag,
+inputs coordinate points from a file to fill the pointBag, asks user for
+a point to compare the distance to all the points in pointBag.
+Input: Coordinate points from points.txt and one point from the user.
+Output: The users point and the each distance from the users point
+to the points in the pointBag.
 */
+
+// File name: main.cpp
 
 #include<iostream>
 #include<fstream>
@@ -18,7 +19,7 @@ using namespace std;
 int main()
 {
 	ifstream in;
-	int tempX{}, tempY{};
+	int tempX{}, tempY{}; 
 	LinkedBag<Point> pointBag;
 
 	in.open("points.txt");
@@ -48,9 +49,10 @@ int main()
 		in >> tempX >> tempY;
 	} // end while
 
-	vector<Point> pointVector = pointBag.toVector();
 
-	// Output the distances from the userPoint to the points in the pointBag.
+	// Output the distances from the userPoint to the points in
+	// the pointBag through a new Point vector.
+	vector<Point> pointVector = pointBag.toVector();
 	cout << "The distance from your point: ";
 	userPoint.display();
 	cout << ", to the points in the bag are: \n";
